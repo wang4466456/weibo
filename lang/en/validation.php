@@ -13,6 +13,8 @@ return [
     |
     */
 
+
+
     'accepted' => 'The :attribute must be accepted.',
     'accepted_if' => 'The :attribute must be accepted when :other is :value.',
     'active_url' => 'The :attribute is not a valid URL.',
@@ -165,6 +167,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => '名称',
+        'email' => '邮箱',
+        'password' => '密码',
+    ],
 
 ];
