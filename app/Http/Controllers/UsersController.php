@@ -39,9 +39,9 @@ class UsersController extends Controller
         ]);
 
         if(!$user){
-            session()->flash('warning', '注册失败');
+            session()->flash('danger', '注册失败');
 
-            return redirect()->route('/');
+            return redirect()->back()->withInput();
 
         }
 
